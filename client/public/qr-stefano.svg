@@ -1,0 +1,48 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- QR Code dla stefanogroup.pl -->
+  <rect width="200" height="200" fill="white"/>
+  
+  <!-- Corner markers -->
+  <rect x="10" y="10" width="50" height="50" fill="black"/>
+  <rect x="20" y="20" width="30" height="30" fill="white"/>
+  <rect x="25" y="25" width="20" height="20" fill="black"/>
+  
+  <rect x="140" y="10" width="50" height="50" fill="black"/>
+  <rect x="150" y="20" width="30" height="30" fill="white"/>
+  <rect x="155" y="25" width="20" height="20" fill="black"/>
+  
+  <rect x="10" y="140" width="50" height="50" fill="black"/>
+  <rect x="20" y="150" width="30" height="30" fill="white"/>
+  <rect x="25" y="155" width="20" height="20" fill="black"/>
+  
+  <!-- Data pattern (simplified representation) -->
+  <rect x="70" y="15" width="5" height="5" fill="black"/>
+  <rect x="80" y="15" width="5" height="5" fill="black"/>
+  <rect x="90" y="15" width="5" height="5" fill="black"/>
+  <rect x="100" y="15" width="5" height="5" fill="black"/>
+  <rect x="110" y="15" width="5" height="5" fill="black"/>
+  
+  <rect x="15" y="70" width="5" height="5" fill="black"/>
+  <rect x="25" y="70" width="5" height="5" fill="black"/>
+  <rect x="35" y="70" width="5" height="5" fill="black"/>
+  <rect x="45" y="70" width="5" height="5" fill="black"/>
+  
+  <rect x="70" y="70" width="5" height="5" fill="black"/>
+  <rect x="80" y="80" width="5" height="5" fill="black"/>
+  <rect x="90" y="70" width="5" height="5" fill="black"/>
+  <rect x="100" y="80" width="5" height="5" fill="black"/>
+  <rect x="110" y="70" width="5" height="5" fill="black"/>
+  <rect x="120" y="80" width="5" height="5" fill="black"/>
+  
+  <!-- More data patterns -->
+  <rect x="70" y="100" width="5" height="5" fill="black"/>
+  <rect x="85" y="100" width="5" height="5" fill="black"/>
+  <rect x="95" y="105" width="5" height="5" fill="black"/>
+  <rect x="105" y="100" width="5" height="5" fill="black"/>
+  <rect x="115" y="105" width="5" height="5" fill="black"/>
+  <rect x="125" y="100" width="5" height="5" fill="black"/>
+  
+  <text x="100" y="220" text-anchor="middle" font-family="Arial" font-size="12" fill="black">
+    stefanogroup.pl
+  </text>
+</svg>

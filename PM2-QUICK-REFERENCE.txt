@@ -1,0 +1,47 @@
+STEFANO RESTAURANT - PM2 QUICK REFERENCE
+=======================================
+
+📊 ESSENTIAL PM2 COMMANDS:
+
+# Process Management
+pm2 list                           # List all processes
+pm2 status                         # Show process status
+pm2 restart stefano-restaurant     # Restart application
+pm2 stop stefano-restaurant        # Stop application
+pm2 delete stefano-restaurant      # Delete process
+
+# Monitoring & Logs
+pm2 monit                          # Live monitoring dashboard
+pm2 logs stefano-restaurant --lines 100    # Show last 100 log lines
+pm2 logs stefano-restaurant --follow       # Follow logs in real-time
+pm2 logs stefano-restaurant --err          # Show only error logs
+
+# Detailed Information
+pm2 show stefano-restaurant        # Detailed process info
+pm2 describe stefano-restaurant    # Process metrics
+
+# Advanced Operations
+pm2 reload stefano-restaurant      # Zero-downtime reload
+pm2 scale stefano-restaurant 4     # Scale to 4 instances
+pm2 flush stefano-restaurant       # Clear logs
+
+# Configuration
+pm2 save                          # Save current configuration
+pm2 resurrect                     # Restore saved processes
+pm2 startup                       # Generate startup script
+
+⚡ MAKE SHORTCUTS:
+make pm2-list       # pm2 list
+make pm2-logs       # pm2 logs stefano-restaurant --lines 100
+make pm2-status     # pm2 status
+make monitor        # pm2 monit
+make pm2-restart    # pm2 restart stefano-restaurant
+
+🚨 TROUBLESHOOTING:
+pm2 logs stefano-restaurant --lines 50  # Check recent errors
+pm2 show stefano-restaurant             # Check process details
+pm2 kill && pm2 resurrect               # Reset PM2 daemon
+
+📍 Process Name: stefano-restaurant
+📍 Config File: ecosystem.config.js
+📍 Logs Location: ~/.pm2/logs/

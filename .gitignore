@@ -1,0 +1,15 @@
+node_modules/
+dist/
+attached_assets/
+.env
+server/.env
+temp/
+*.zip
+*.psd
+*.ai
+*.mp4
+*.mov
+stefano-website-complete/
+stefanogroup-pl-final/
+backup-old/
+server/restore-backup/

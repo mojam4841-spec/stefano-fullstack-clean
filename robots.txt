@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://stefanogroup.pl/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /server/
+
+# Allow important pages
+Allow: /
+Allow: /index.html
+Allow: /assets/
+Allow: /attached_assets/

@@ -1,0 +1,15 @@
+../server
+../shared
+../monitoring
+../enterprise  
+../scripts
+../.env*
+../docker*
+../nginx*
+../ecosystem.config.js
+../Dockerfile*
+../pm2*
+../stefano-*
+node_modules
+.env*
+*.log

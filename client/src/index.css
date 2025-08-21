@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(0, 0%, 100%);
+  --muted: hsl(0, 0%, 20%);
+  --muted-foreground: hsl(0, 0%, 70%);
+  --popover: hsl(0, 0%, 10%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --card: hsl(0, 0%, 15%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --border: hsl(0, 0%, 25%);
+  --input: hsl(0, 0%, 20%);
+  --primary: hsl(4, 100%, 59%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 20%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --accent: hsl(45, 79%, 54%);
+  --accent-foreground: hsl(0, 0%, 0%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(45, 79%, 54%);
+  --radius: 0.5rem;
+  
+  /* Stefano specific colors */
+  --stefano-red: hsl(4, 100%, 59%);
+  --stefano-gold: hsl(45, 79%, 54%);
+  --stefano-dark: hsl(0, 0%, 10%);
+  --stefano-gray: hsl(0, 0%, 20%);
+}
+
+.dark {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(0, 0%, 100%);
+  --muted: hsl(0, 0%, 20%);
+  --muted-foreground: hsl(0, 0%, 70%);
+  --popover: hsl(0, 0%, 10%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --card: hsl(0, 0%, 15%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --border: hsl(0, 0%, 25%);
+  --input: hsl(0, 0%, 20%);
+  --primary: hsl(4, 100%, 59%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(0, 0%, 20%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --accent: hsl(45, 79%, 54%);
+  --accent-foreground: hsl(0, 0%, 0%);
+  --destructive: hsl(0, 62.8%, 30.6%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --ring: hsl(45, 79%, 54%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-lato antialiased bg-black text-white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Eliminate white gaps between sections */
+  section {
+    margin: 0 !important;
+  }
+
+  /* Ensure continuous black background */
+  .min-h-screen {
+    background: #000000 !important;
+    min-height: 100vh;
+  }
+
+  /* Fix any white backgrounds in components */
+  .bg-white {
+    background-color: #000000 !important;
+  }
+
+  .bg-gray-50 {
+    background-color: #1a1a1a !important;
+  }
+
+  .bg-gray-100 {
+    background-color: #2a2a2a !important;
+  }
+
+  /* Force black background everywhere */
+  html {
+    background-color: #000000 !important;
+  }
+
+  /* Remove any potential white gaps */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Ensure all containers have black background */
+  .container, .max-w-7xl, .max-w-6xl, .max-w-5xl, .max-w-4xl {
+    background-color: transparent !important;
+  }
+
+  /* Fix card backgrounds */
+  .bg-card {
+    background-color: var(--stefano-gray) !important;
+  }
+
+  /* Fix any remaining white backgrounds */
+  [class*="bg-white"] {
+    background-color: #000000 !important;
+  }
+
+  /* Ensure sections flow seamlessly */
+  section + section {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat;
+  }
+}
+
+@layer utilities {
+  .stefano-red {
+    color: var(--stefano-red);
+  }
+  
+  .stefano-gold {
+    color: var(--stefano-gold);
+  }
+  
+  .bg-stefano-red {
+    background-color: var(--stefano-red);
+  }
+  
+  .bg-stefano-gold {
+    background-color: var(--stefano-gold);
+  }
+  
+  .bg-stefano-dark {
+    background-color: var(--stefano-dark);
+  }
+  
+  .bg-stefano-gray {
+    background-color: var(--stefano-gray);
+  }
+  
+  .border-stefano-gold {
+    border-color: var(--stefano-gold);
+  }
+  
+  .hero-slider {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .lazy-load {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .lazy-load.loaded {
+    opacity: 1;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out;
+  }
+  
+  .animate-counter {
+    animation: counter 2s ease-out;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes counter {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

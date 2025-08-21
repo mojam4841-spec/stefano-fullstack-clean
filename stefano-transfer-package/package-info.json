@@ -1,0 +1,30 @@
+{
+  "name": "Stefano Restaurant System",
+  "version": "1.0.0",
+  "created": "2025-06-26T14:18:03.361Z",
+  "description": "Kompletny system restauracyjny z panelem administracyjnym",
+  "features": [
+    "Strona restauracji z menu i promocjami",
+    "System zamówień online z avatarami",
+    "Program lojalnościowy z punktami i nagrodami",
+    "Panel administracyjny z pełną analityką",
+    "Monitoring kuchni z inteligentnym zarządzaniem",
+    "Progressive Web App (PWA)",
+    "Chatbot z wiedzą o menu",
+    "System płatności i fakturowania",
+    "Sklep z sosami własnymi",
+    "Integracja z WhatsApp"
+  ],
+  "requirements": {
+    "Node.js": "18+",
+    "PostgreSQL": "13+",
+    "RAM": "4GB",
+    "Storage": "2GB"
+  },
+  "optionalServices": {
+    "Google Analytics": "Śledzenie ruchu na stronie",
+    "OpenAI": "Zaawansowany chatbot",
+    "Stripe": "Płatności online",
+    "SendGrid": "Wysyłanie emaili"
+  }
+}

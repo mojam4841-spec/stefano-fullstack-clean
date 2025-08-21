@@ -1,0 +1,77 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="128" fill="#0A0A0A"/>
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="#1E1E1E"/>
+  
+  <!-- Stefano Logo Circle -->
+  <circle cx="256" cy="180" r="80" fill="url(#stefanoGold)"/>
+  <circle cx="256" cy="180" r="75" fill="#000" opacity="0.8"/>
+  
+  <!-- Stefano Text -->
+  <text x="256" y="190" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#FFD700" text-anchor="middle" dominant-baseline="middle">STEFANO</text>
+  
+  <!-- Gastro Avatar Circle -->
+  <circle cx="256" cy="350" r="70" fill="url(#gastroGradient)"/>
+  <circle cx="256" cy="350" r="65" fill="#1A1A1A"/>
+  
+  <!-- Gastro Avatar Face -->
+  <circle cx="256" cy="340" r="50" fill="url(#faceGradient)"/>
+  
+  <!-- Chef Hat -->
+  <ellipse cx="256" cy="310" rx="35" ry="20" fill="#FFFFFF"/>
+  <rect x="235" y="305" width="42" height="25" fill="#FFFFFF"/>
+  <ellipse cx="256" cy="300" rx="21" ry="8" fill="#F0F0F0"/>
+  
+  <!-- Eyes -->
+  <circle cx="245" cy="335" r="4" fill="#2C2C2C"/>
+  <circle cx="267" cy="335" r="4" fill="#2C2C2C"/>
+  <circle cx="246" cy="334" r="1.5" fill="#FFFFFF"/>
+  <circle cx="268" cy="334" r="1.5" fill="#FFFFFF"/>
+  
+  <!-- Nose -->
+  <ellipse cx="256" cy="345" rx="2" ry="3" fill="#D4A574"/>
+  
+  <!-- Smile -->
+  <path d="M248 355 Q256 365 264 355" stroke="#2C2C2C" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Mustache -->
+  <path d="M245 350 Q256 355 267 350" stroke="#8B4513" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Cyber Effects -->
+  <circle cx="350" cy="120" r="8" fill="#00FFFF" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="160" cy="420" r="6" fill="#FF00FF" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="400" cy="300" r="4" fill="#FFD700" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Tech Grid Lines -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00FFFF" stroke-width="0.5" opacity="0.2"/>
+    </pattern>
+  </defs>
+  <rect x="32" y="32" width="448" height="448" fill="url(#grid)" opacity="0.3"/>
+  
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="stefanoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="gastroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF6B00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DC143C;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="faceGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#F4C2A1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4A574;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+</svg>
