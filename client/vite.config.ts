@@ -1,35 +1,16 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import path from "path";
+import path from "node:path";
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
-      "@shared": path.resolve(__dirname, "../shared"),
-      "@assets": path.resolve(__dirname, "../attached_assets"),
+      // shimy blokujące przypadkowe bundlowanie serwerowych paczek:
+      "drizzle-orm": path.resolve(__dirname, "src/shims/empty.ts"),
+      "drizzle-orm/pg-core": path.resolve(__dirname, "src/shims/empty.ts"),
+      pg: path.resolve(__dirname, "src/shims/empty.ts"),
     },
   },
-  build: {
-    outDir: "dist",
-    emptyOutDir: true,
-    sourcemap: false,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          ui: ['@radix-ui/react-dialog', '@radix-ui/react-select', '@radix-ui/react-tabs']
-        }
-      }
-    }
-  },
-  server: {
-    port: 5173,
-    host: true
-  },
-  preview: {
-    port: 4173,
-    host: true
-  }
 });
