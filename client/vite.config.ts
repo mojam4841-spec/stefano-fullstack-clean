@@ -7,7 +7,6 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
-      // shimy blokujące przypadkowe bundlowanie serwerowych paczek:
       "drizzle-orm": path.resolve(__dirname, "src/shims/empty.ts"),
       "drizzle-orm/pg-core": path.resolve(__dirname, "src/shims/empty.ts"),
       pg: path.resolve(__dirname, "src/shims/empty.ts"),
